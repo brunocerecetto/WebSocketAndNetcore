@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/brunocerecetto/projects/tests/socket/WebSocketAndNetcore.Web.csproj": {}
+    "/Users/brunocerecetto/projects/tests/WebSocketAndNetcore/WebSocketAndNetcore.Web.csproj": {}
   },
   "projects": {
-    "/Users/brunocerecetto/projects/tests/socket/WebSocketAndNetcore.Web.csproj": {
+    "/Users/brunocerecetto/projects/tests/WebSocketAndNetcore/WebSocketAndNetcore.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brunocerecetto/projects/tests/socket/WebSocketAndNetcore.Web.csproj",
+        "projectUniqueName": "/Users/brunocerecetto/projects/tests/WebSocketAndNetcore/WebSocketAndNetcore.Web.csproj",
         "projectName": "WebSocketAndNetcore.Web",
-        "projectPath": "/Users/brunocerecetto/projects/tests/socket/WebSocketAndNetcore.Web.csproj",
+        "projectPath": "/Users/brunocerecetto/projects/tests/WebSocketAndNetcore/WebSocketAndNetcore.Web.csproj",
         "packagesPath": "/Users/brunocerecetto/.nuget/packages/",
-        "outputPath": "/Users/brunocerecetto/projects/tests/socket/obj/",
+        "outputPath": "/Users/brunocerecetto/projects/tests/WebSocketAndNetcore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/brunocerecetto/.nuget/NuGet/NuGet.Config"
@@ -35,6 +35,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.SpaServices": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[*, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
