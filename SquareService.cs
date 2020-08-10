@@ -21,7 +21,7 @@ namespace WebSocketAndNetCore.Web
         _users.Add(name, socket);
         GiveUserTheirName(name, socket).Wait();
         AnnounceNewUser(name).Wait();
-        SemdSquare(socket).Wait();
+        SendSquares(socket).Wait();
 
         while (socket.State == WebSocketState.Open)
         {
@@ -66,12 +66,13 @@ namespace WebSocketAndNetCore.Web
 
     private async Task SendSquares(WebSocket socket)
     {
-      var message = WebSocketMessageType<List<Square>>()
+      var message = new SocketMessage<List<Square>>()
       {
-        WebSocketMessageType = "squares",
+        MessageType = "squares",
         Payload = _squares
-      }
-      await Send(message.toJson(), socket);
+      };
+
+      await Send(message.ToJson(), socket);
     }
 
     private async Task SendAll(string message)
@@ -97,7 +98,7 @@ namespace WebSocketAndNetCore.Web
         MessageType = "name",
         Payload = name
       };
-      await Send(message.toJson(), socket);
+      await Send(message.ToJson(), socket);
     }
 
     private async Task AnnounceNewUser(string name)
