@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bS/o1RKkFJXwfw8nYArQMZT7PNY44I9Ylvucy+55VVoFRQsWaYeRvZswn6r5+Jzxg4q0kiA10U44Ele0Kp+Z6A==",
+  "dgSpecHash": "oKoeQ6UvgntTtKjQ1WQHKMSIVVQp+cfrwsrHxCf/AqLKDrgDVVgk5xT8pOpPESEju3B0655pV1ImOPPo/5q7OQ==",
   "success": true,
   "projectFilePath": "/Users/brunocerecetto/projects/tests/WebSocketAndNetcore/WebSocketAndNetcore.Web.csproj",
   "expectedPackageFiles": [
