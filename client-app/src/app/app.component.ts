@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Square } from './models';
+import { Square, SquareChangeRequest } from './models';
 import { WebSocketService } from './web-socket.service';
 
 @Component({
